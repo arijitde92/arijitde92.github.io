@@ -266,9 +266,11 @@ hr {
 	margin: 2.4rem 0 1.5rem;
 	height: 0;
 }
-
+.devicon-img {
+    max-width: 100%;
+}
 /**
- * Lists - (_document-setup.scss)  
+ * Lists - (_document-setup.scss)
  * -------------------------------------------------------------------
  */
 ol {
@@ -1095,18 +1097,18 @@ header .row {
 }
 header .top-bar {
 	display: block;
-	background: #000000;
-	min-width: 220px;
+	background: rgba(0, 0, 0, 0.5);
+	min-width: 80px;
 	min-height: 66px;
 	position: absolute;
-	left: 90px;
+	left: 0;
 	top: 0;
 }
 header .logo {
 	float: left;
 	margin-left: 20px;
 	margin-right: 50px;
-	margin-top: 25px;
+	margin-top: 20px;
 	position: relative;
 }
 header .logo a {
@@ -1114,12 +1116,13 @@ header .logo a {
 	margin: 0;
 	padding: 0;
 	border: none;
-	font: 0/0 a;
+	/* font: 0/0 a; */
 	text-shadow: none;
-	color: transparent;
+	color: white;
+	font-size: xx-large;
 	width: 92px;
 	height: 15px;
-	background: url("../images/logo.png") no-repeat center;
+	/*background: url("../images/logo.png") no-repeat center;*/
 	background-size: 92px 15px;
 }
 
@@ -1265,7 +1268,7 @@ header .logo a {
  * header styles
  * --------------------------------------------------------------- 
  */
-@media only screen and (max-width:1024px) {
+/* @media only screen and (max-width:1024px) {
 	header .top-bar {
 		left: 60px;
 	}
@@ -1284,7 +1287,7 @@ header .logo a {
 	header .top-bar {
 		left: 25px;
 	}
-}
+} */
 
 
 /** 
@@ -1511,7 +1514,7 @@ header .logo a {
 	float: left;
 }
 .intro-info .lead {
-	text-align: left;
+	text-align: justify;
 	padding-left: 13rem;
 }
 
