@@ -82,7 +82,7 @@ body {
  * -------------------------------------------------------------------
  */
 a, a:visited {
-	color: #000000;
+	color: #0058e4;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -154,13 +154,13 @@ p img {
 }
 p.lead {
 	font-family: "lora-regular", serif;
-	font-size: 2rem;
-	line-height: 1.8;
+	font-size: 1.6rem;
+	line-height: 1.5;
 	color: #888888;
 }
 @media only screen and (max-width:768px) {
 	p.lead {
-		font-size: 1.7rem;
+		font-size: 1.5rem;
 	}
 }
 em, i, strong, b {
@@ -1613,7 +1613,7 @@ header .logo a {
 	}
 	.intro-info .lead {
 		padding-left: 0;
-		text-align: center;
+		text-align: justify;
 	}
 }
 
