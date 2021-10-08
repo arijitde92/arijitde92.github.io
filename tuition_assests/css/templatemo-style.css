@@ -279,7 +279,6 @@ p, .tm-text-gray { color: #999; }
     overflow: hidden;
     text-align: center;
     cursor: pointer;
-    z-index: -1;
 }
 
 .tm-video-item img {
@@ -583,6 +582,7 @@ select:not([multiple]) {
         background: white;
         width: 150px;
         padding: 15px;
+        z-index: 999;
     }
 
     .tm-container-content { max-width: 870px; }
