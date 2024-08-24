@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/Articles-Badges-images.css">
     <link rel="stylesheet" href="assets/css/Features-Large-Icons-icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
@@ -33,7 +35,12 @@
         <div class="container"><img class="rounded-circle img-fluid d-block mx-auto mb-5" data-bss-hover-animate="pulse" src="assets/img/MyPhoto.jpg" alt="Profile Image">
             <h1>Arijit De</h1>
             <hr class="star-light">
-            <h2 class="font-weight-light mb-0">TCS RSP Research Scholar - Open Source Contributor - Freelancer - Educator</h2>
+            <div id="typed-strings">
+                <p>Machine Learning Researcher</p>
+                <p>Open Source Contributor</p>
+                <p>Freelancer</p>
+            </div>
+            <span id="typed" style="font-size: xx-large"></span>
         </div>
     </header>
     <section class="text-white bg-secondary mb-0" id="about">
@@ -41,8 +48,11 @@
             <h2 class="text-uppercase text-center text-white">About</h2>
             <div class="row">
                 <div class="col">
-                    <p class="text-justify">Final year PhD student in the Electronics and Telecommunication (<a href="http://www.jaduniv.edu.in/view_department.php?deptid=84" style="color: var(--bs-info);">ETCE</a>) Engineering Department of <a href="https://jadavpuruniversity.in/" style="color: var(--bs-info);">Jadavpur University</a>&nbsp;(JU), Kolkata.
-                        I work in the Imaging, Vision and Pattern Recognition (<a href="https://sites.google.com/site/ivprgroup/home-page-ivpr" style="color: var(--bs-info);">IVPR</a>) Group led by my guide- <a href="https://sites.google.com/site/anandachowdhury/" style="color: var(--bs-info);" target="_blank">Dr. Ananda S. Chowhdury&nbsp;</a>.
+                    <p class="text-justify">Machine Learning Engineer at <a href="https://zontro.io/" style="color: var(--bs-info);" target="_blank">Zontro</a>, a child company of <a href="https://www.mvizn.com/" target="_blank" style="color: var(--bs-info);">mVizn Pte. Ltd.</a>
+                        Working on building 3D Computer Vision based solutions using 3D point clouds. I look after the deep learning pipeline including model training, testing and deployment.
+                    </p>
+                    <p class="text-justify">Awaiting PhD degree. Worked as a TCS RSP Research Scholar in the Electronics and Telecommunication (<a href="http://www.jaduniv.edu.in/view_department.php?deptid=84" style="color: var(--bs-info);">ETCE</a>) Engineering Department of <a href="https://jadavpuruniversity.in/" style="color: var(--bs-info);">Jadavpur University</a>&nbsp;(JU), Kolkata.
+                        I worked in the Imaging, Vision and Pattern Recognition (<a href="https://sites.google.com/site/ivprgroup/home-page-ivpr" style="color: var(--bs-info);">IVPR</a>) Group led by my guide- <a href="https://sites.google.com/site/anandachowdhury/" style="color: var(--bs-info);" target="_blank">Dr. Ananda S. Chowhdury&nbsp;</a>.
                         Researching on developing better AI/ML based detection, classification, segmentation and prediction algorithms using Deep Learning and Computer Vision for various brain disorders using various imaging data (radiological, histopathological, etc.) and phenotype/genotype data.&nbsp;</p>
                     <p class="text-justify">Before delving into research I worked in Mercedes-Benz Research &amp; Development India (<a href="https://www.mbrdi.co.in/" style="color: var(--bs-info);">MBRDI</a>) involving myself in stand alone tool development with Python, PyQT and MySQL along with python scripting for automation of data quality checks.
                         During my Master's course in JU, I worked on pulmonary artery-vein segmentation from 3D CTA images.
@@ -54,7 +64,7 @@
                         I am interested in a challenging career in Machine Learning that will continuously motivate me to learn and develop advanced solutions to contemporary problems.</p>
                 </div>
             </div>
-            <div class="text-center mt-4"><a class="btn btn-outline-light btn-xl" role="button" href="" target="_blank"><i class="fa fa-download me-2"></i><span>Download CV</span></a></div>
+            <div class="text-center mt-4"><a class="btn btn-outline-light btn-xl" role="button" href="assets/docs/CV.pdf" target="_blank"><i class="fa fa-download me-2"></i><span>Download CV</span></a></div>
         </div>
     </section>
     <footer class="text-center footer">
@@ -62,7 +72,7 @@
             <div class="row">
                 <div class="col-md-4 mb-5 mb-lg-0">
                     <h4 class="text-uppercase mb-4">Location</h4>
-                    <p><a class="link-light" href="https://jadavpuruniversity.in/" target="_blank" rel="external">Jadavpur University</a>, Kolkata, India</p>
+                    <p>Kolkata, West Bengal, India</p>
                 </div>
                 <div class="col-md-4 mb-5 mb-lg-0">
                     <h4 class="text-uppercase">Get in Touch</h4>
@@ -84,11 +94,21 @@
         </div>
     </footer>
     <div class="text-center text-white copyright py-4">
-        <div class="container"><small>Copyright ©&nbsp;Arijit De 2023</small></div>
+        <div class="container"><small>Copyright ©&nbsp;Arijit De 2024</small></div>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/freelancer.js"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+            typeSpeed: 40,
+            backDelay: 1000,
+            loop: true,
+            loopCount: 30,
+            cursorChar: '_'
+        });
+    </script>
 </body>
 
 </html>
