@@ -450,6 +450,11 @@ section {
 
 .about-cta {
   margin-top: 32px;
+  justify-content: center; /* Centers the button horizontally */
+  align-items: center;     /* Centers vertically if a height is set */
+  width: 100%;             /* Ensures the div takes up the full width of the parent */
+  margin-top: 20px;        /* Optional: Adds some breathing room below the PhD card */
+  text-align: center;      /* Centers the button text */
 }
 
 /* PhD card */
